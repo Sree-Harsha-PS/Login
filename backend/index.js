@@ -9,7 +9,7 @@ app.use(express.urlencoded());
 app.use(cors());
 
 
-mongoose.connect("mongodb://localhost:27017/auth",{
+mongoose.connect("process.env.MONGODB_URI",{
     useNewUrlParser:true,
     useUnifiedTopology:true
 });()=>{
